@@ -59,7 +59,7 @@ audio_pkgs=(
 utils_pkgs=(
   brightnessctl power-profiles-daemon udisks2 polkit-gnome rsync tree unzip 7zip fastfetch curl wget
   gvfs gvfs-mtp gvfs-afc gvfs-gphoto2 tumbler ffmpegthumbnailer poppler-glib freetype2 libgsf
-  webp-pixbuf-loader btrfs-assistant
+  webp-pixbuf-loader btrfs-assistant pavucontrol
 )
 
 dev_pkgs=(
