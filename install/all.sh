@@ -66,8 +66,8 @@ dev_pkgs=(
   git nodejs luarocks stow tmux zsh neovim kitty python docker docker-compose
 )
 
-wayland_pkgs=(
-  hyprland hyprlock waybar rofi-wayland wl-clipboard grimblast swww ly thunar imv mpv
+desktop_pkgs=(
+  hyprland hyprlock waybar rofi-wayland wl-clipboard grimblast swww ly thunar imv mpv gammastep flatpak
 )
 
 apps_aur_pkgs=(
@@ -97,7 +97,7 @@ install_pkgs "Desenvolvimento" "${dev_pkgs[@]}"
 info "Adicionando o usuário ao grupo docker"
 sudo usermod -aG docker "$USER"
 
-install_pkgs "Ambiente gráfico (Wayland)" "${wayland_pkgs[@]}"
+install_pkgs "Ambiente gráfico" "${desktop_pkgs[@]}"
 
 info "Ativando o login manager ly"
 sudo systemctl enable ly.service
