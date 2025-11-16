@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-  background-color: @surface_container;
+  background-color: @background;
   color: @on_surface;
 }
 
@@ -17,7 +17,7 @@ window#waybar {
 #backlight,
 #pulseaudio,
 #battery {
-  color: @on_surface;
+  color: @foreground;
   padding: 0 6px;
 }
 
@@ -30,22 +30,22 @@ window#waybar {
 }
 
 #workspaces button {
-  color: @on_surface;
+  color: @foreground;
   padding: 0 2px;
 }
 
 #workspaces button.active {
-  color: @primary;
+  color: @main;
 }
 
 #battery.charging {
-  color: @primary_fixed;
+  color: @charging;
 }
 
 #battery.warning {
-  color: @secondary;
+  color: @warning;
 }
 
 #battery.critical {
-  color: @error;
+  color: @critical;
 }
