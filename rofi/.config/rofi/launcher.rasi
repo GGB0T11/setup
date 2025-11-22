@@ -20,12 +20,7 @@ window {
 }
 
 inputbar {
-    padding: 0 0 4 8px;
-    children: [ prompt, entry ];
-}
-
-entry {
-    padding: 0 16px;
+    enabled: false;
 }
 
 listview {
