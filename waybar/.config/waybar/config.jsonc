@@ -10,6 +10,7 @@
     ],
     "modules-right": [
         "tray",
+        "backlight",
         "pulseaudio",
         "battery",
         "custom/power"
@@ -26,9 +27,26 @@
         "icon-size": 16,
         "spacing": 10
     },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "on-scroll-up": "brightnessctl s 1%+",
+        "on-scroll-down": "brightnessctl s 1%-",
+        "tooltip": false
+    },
     "pulseaudio": {
         "format": " {volume}% {format_source}",
-        "format-muted": " {format_source}",
+        "format-muted": "  {format_source}",
         "format-source": "",
         "format-source-muted": "󰍭",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
