@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 options="Catppuccin\nDracula\nEverforest\nGruvbox\nNord\nRose Pine\nSolarized\nTokyo Night\nMatugen\nWallust"
 
