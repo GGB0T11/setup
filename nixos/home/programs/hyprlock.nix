@@ -3,8 +3,6 @@
     enable = true;
 
     settings = {
-      source = "./colors.conf";
-
       general = {
         grace = 1;
         fractional_scaling = 2;
@@ -29,7 +27,7 @@
         {
           monitor = "";
           text = ''cmd[update:1000] echo "<b><big> $(date +"%H") </big></b>"'';
-          color = "$active";
+          color = "rgba(fabd2fee)";
           font_size = 112;
           font_family = "Adwaita Sans";
           shadow_passes = 0;
@@ -43,7 +41,7 @@
         {
           monitor = "";
           text = ''cmd[update:1000] echo "<b><big> $(date +"%M") </big></b>"'';
-          color = "$foreground";
+          color = "rgba(ebdbb2ee)";
           font_size = 112;
           font_family = "Adwaita Sans";
           shadow_passes = 0;
@@ -57,7 +55,7 @@
         {
           monitor = "";
           text = ''cmd[update:18000000] echo "<b><big> "$(date +'%A')" </big></b>"'';
-          color = "$color1";
+          color = "rgba(d79921ee)";
           font_size = 18;
           font_family = "JetBrainsMono NFM";
           position = "0, -15";
@@ -69,7 +67,7 @@
         {
           monitor = "";
           text = ''cmd[update:18000000] echo "<b> "$(date +'%d %b')" </b>"'';
-          color = "$color1";
+          color = "rgba(928374ee)";
           font_size = 14;
           font_family = "JetBrainsMono Nerd Font 10";
           position = "0, -40";
@@ -81,7 +79,7 @@
         {
           monitor = "";
           text = "$USER";
-          color = "$active";
+          color = "rgba(fabd2fee)";
           font_size = 14;
           font_family = "JetBrainsMono NFM Bold";
           position = "0, 200";
@@ -101,11 +99,11 @@
           dots_rouding = -1;
           rounding = 22;
 
-          outer_color = "$color1";
-          inner_color = "rgba(255, 255, 255, 0.1)";
-          font_color = "$color8";
-          check_color = "$color8";
-          fail_color = "$color8";
+          outer_color = "rgba(fabd2fee)";
+          inner_color = "rgba(29, 32, 33, 0.85)";
+          font_color  = "rgba(ebdbb2ee)";
+          check_color = "rgba(98971aee)";
+          fail_color  = "rgba(cc241dee)";
 
           fade_on_empty = true;
           placeholder_text = "";

@@ -16,8 +16,6 @@
       cursor_blink = "true";
       wheel_scroll_multiplier = "3.0";
     };
-    extraConfig = ''
-      include colors.conf
-    '';
+    themeFile = "gruvbox-dark";
   };
 }

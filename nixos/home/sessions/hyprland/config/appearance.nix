@@ -1,14 +1,12 @@
 {
   wayland.windowManager.hyprland.settings = {
-    source = "./colors.conf";
-  
     general = {
       border_size = 1;
-      gaps_in = 5;
-      gaps_out = 10;
+      gaps_in = 0;
+      gaps_out = 0;
   
-      "col.active_border" = "$active";
-      "col.inactive_border" = "$inactive";
+      "col.active_border" = "rgba(fabd2fee)";
+      "col.inactive_border" = "rgba(282828ee)";
   
       resize_on_border = false;
       allow_tearing = false;
@@ -16,8 +14,7 @@
     };
   
     decoration = {
-      rounding = 10;
-      rounding_power = 2;
+      rounding = 0;
   
       active_opacity = 1.0;
       inactive_opacity = 1.0;
@@ -27,12 +24,7 @@
       };
   
       blur = {
-        enabled = true;
-        size = 5;
-        passes = 3;
-        noise = 0.01;
-        vibrancy = 0.1696;
-        new_optimizations = true;
+        enabled = false;
       };
     };
   
