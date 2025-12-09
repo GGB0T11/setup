@@ -7,13 +7,13 @@
     colorScheme = "dark";
     
     theme = {
-      name = "Orchis-Dark-Compact";
-      package = pkgs.orchis-theme;
+      name = "gruvbox-dark";
+      package = pkgs.gruvbox-dark-gtk;
     };
 
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "oomox-gruvbox-dark";
+      package = pkgs.gruvbox-dark-icons-gtk;
     };
 
     cursorTheme = {
