@@ -93,8 +93,16 @@
       ",XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
       ",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
 
+      "CTRL, F3, exec, swayosd-client --output-volume 5 --max-volume 100"
+      "CTRL, F2, exec, swayosd-client --output-volume -5"
+      "CTRL, F1, exec, swayosd-client --output-volume mute-toggle"
+      "CTRL, F4, exec, swayosd-client --input-volume mute-toggle"
+
       ",XF86MonBrightnessUp, exec, swayosd-client --brightness +5"
       ",XF86MonBrightnessDown, exec, swayosd-client --brightness -5"
+
+      "CTRL, F11, exec, swayosd-client --brightness +5"
+      "CTRL, F12, exec, swayosd-client --brightness -5"
     ];
 
     bindl = [
