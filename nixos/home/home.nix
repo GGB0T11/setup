@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   home.username = "gustavo";
@@ -33,5 +33,5 @@
   ];
 
   services.swayosd.enable = true;
-
+  systemd.user.services.swayosd.Unit.ConditionEnvironment = lib.mkForce "";
 }

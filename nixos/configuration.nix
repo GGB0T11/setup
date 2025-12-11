@@ -102,6 +102,7 @@
     # -- Áudio e Controle
     pavucontrol
     playerctl
+    pulseaudio
     # -- Desenvolvimento
     neovim
     nodejs
