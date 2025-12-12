@@ -101,8 +101,8 @@
       ",XF86MonBrightnessUp, exec, swayosd-client --brightness +5"
       ",XF86MonBrightnessDown, exec, swayosd-client --brightness -5"
 
-      "CTRL, F11, exec, swayosd-client --brightness +5"
-      "CTRL, F12, exec, swayosd-client --brightness -5"
+      "CTRL, F12, exec, swayosd-client --brightness +5"
+      "CTRL, F11, exec, swayosd-client --brightness -5"
     ];
 
     bindl = [
