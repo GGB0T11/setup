@@ -7,14 +7,33 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs"; 
     };
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v1.0.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: {
+  outputs = { self, nixpkgs, home-manager, lanzaboote, ... }: {
     nixosConfigurations.nix-machine = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-	      home-manager.nixosModules.home-manager
+	home-manager.nixosModules.home-manager
+	lanzaboote.nixosModules.lanzaboote
+
+	({ pkgs, lib, ... }: {
+
+            environment.systemPackages = [
+              pkgs.sbctl
+            ];
+
+            boot.loader.systemd-boot.enable = lib.mkForce false;
+
+            boot.lanzaboote = {
+              enable = true;
+              pkiBundle = "/var/lib/sbctl";
+            };
+          })
       ];
     };
   };

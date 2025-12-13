@@ -7,7 +7,6 @@
     ];
 
   boot.loader = {
-    systemd-boot.enable = true;
     efi.canTouchEfiVariables = true;
     timeout = 1;
   };
@@ -77,6 +76,7 @@
 
   environment.systemPackages = with pkgs; [
     # -- Base e Utilitários
+    efibootmgr
     wget
     curl
     git
